@@ -1,3 +1,12 @@
+=begin
+   Problem definition:
+      For an arbitrary list of numbers, and a range that is in the set 0 - Infinity,
+      compute the total combined sum of all the multiples of the numbers in the list for the given range.
+      e.g. list = [3,5] range = (0..999), total sum = 233168 (this is the sum of all multiples of 3 and 5 for the
+      range 0 to 999).
+=end
+
+
 # defines the list of integers from 'b' downto 'a'
 # InverseZ stands for the set of all integers from 0 to Infinity, mathematically denoted 'Z',
 # but inverted, so, really, Infinity downto 0.
@@ -179,7 +188,7 @@ end
 # This is the main script logic
 
 start_time = Time.now.to_f
-sum = find_sum_of_multiples(1, 10000, 7, 248, 35, 3, 5) 
+sum = find_sum_of_multiples(1, 999, 3, 5) 
 end_time = Time.now.to_f
 
 puts "time " + (end_time - start_time).to_s
